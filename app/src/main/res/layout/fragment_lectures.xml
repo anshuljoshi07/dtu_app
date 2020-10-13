@@ -1,0 +1,47 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:autoPlay="true"
+            app:showFullScreenButton="true"
+            app:videoId="4a0FbQdH3dY" />
+
+    <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="NOTES"
+            android:textColor="#090909" />
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:paddingTop="20dp"
+            android:text="NOTES"
+            />
+
+    <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:textColor="#090909"
+            android:layout_height="wrap_content"
+            android:text="COMMENTS" />
+
+    <TextView
+            android:id="@+id/textView4"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:text="COMMENTS" />
+</LinearLayout>

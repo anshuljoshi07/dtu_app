@@ -5,7 +5,11 @@
             app:startDestination="@id/homeFragment">
 
     <fragment android:id="@+id/homeFragment" android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.HomeFragment"
-              android:label="Home" tools:layout="@layout/fragment_home"/>
+              android:label="Home" tools:layout="@layout/fragment_home">
+        <action
+                android:id="@+id/action_homeFragment_to_noticesFragment"
+                app:destination="@id/NoticesFragment" />
+    </fragment>
     <fragment android:id="@+id/profileFragment"
               android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.ProfileFragment" android:label="Profile"
               tools:layout="@layout/fragment_profile">
@@ -15,6 +19,12 @@
                 app:destination="@id/updateEmailFragment"/>
         <action android:id="@+id/actionUpdatePassword"
                 app:destination="@id/updatePasswordFragment"/>
+        <action
+                android:id="@+id/action_profileFragment_to_noticesFragment"
+                app:destination="@id/NoticesFragment" />
+        <action
+                android:id="@+id/action_profileFragment_to_lecturesFragment"
+                app:destination="@id/LecturesFragment" />
     </fragment>
     <fragment android:id="@+id/verifyPhoneFragment"
               android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.VerifyPhoneFragment"
@@ -32,4 +42,52 @@
         <action android:id="@+id/actionPasswordUpdated"
                 app:destination="@id/profileFragment"/>
     </fragment>
+    <fragment
+            android:id="@+id/NoticesFragment"
+            android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.NoticesFragment"
+            android:label="fragment_notices"
+            tools:layout="@layout/fragment_notices" >
+        <action
+                android:id="@+id/action_noticesFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+        <action
+                android:id="@+id/action_NoticesFragment_to_AddFragment"
+                app:destination="@id/AddFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/AddFragment"
+            android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.AddFragment"
+            android:label="AddFragment" >
+        <action
+                android:id="@+id/action_AddFragment_to_NoticesFragment"
+                app:destination="@id/NoticesFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/LecturesFragment"
+            android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.LecturesFragment"
+            android:label="LecturesFragment" >
+        <action
+                android:id="@+id/action_lecturesFragment_to_profileFragment"
+                app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/AssignmentFragment"
+            android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.AssignmentFragment"
+            android:label="fragment_assignment"
+            tools:layout="@layout/fragment_assignment" />
+    <fragment
+            android:id="@+id/ScheduleFragment"
+            android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.ScheduleFragment"
+            android:label="fragment_schedule2"
+            tools:layout="@layout/fragment_schedule2" />
+    <fragment
+            android:id="@+id/SyllabusFragment"
+            android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.SyllabusFragment"
+            android:label="fragment_syllabus"
+            tools:layout="@layout/fragment_syllabus" />
+    <fragment
+            android:id="@+id/TimetableFragment"
+            android:name="net.simplifiedcoding.firebaseauthtutorial.ui.fragments.TimetableFragment"
+            android:label="fragment_timetable"
+            tools:layout="@layout/fragment_timetable" />
 </navigation>

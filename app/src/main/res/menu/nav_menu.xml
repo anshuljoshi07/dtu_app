@@ -10,5 +10,29 @@
             android:id="@+id/profileFragment"
             android:title="Profile"
     />
+    <item
+            android:id="@+id/NoticesFragment"
+            android:title="Notices"
+            />
+    <item
+            android:id="@+id/LecturesFragment"
+            android:title="Lectures"
+            />
+    <item
+            android:id="@+id/SyllabusFragment"
+            android:title="Syllabus"
+            />
+    <item
+            android:id="@+id/TimetableFragment"
+            android:title="Timetable"
+            />
+    <item
+            android:id="@+id/ScheduleFragment"
+            android:title="Exams schedule"
+            />
+    <item
+            android:id="@+id/AssignmentFragment"
+            android:title="Upload Assignment "
+            />
 
 </menu>
